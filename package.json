@@ -6,6 +6,15 @@
   "scripts": {
     "start": "node index"
   },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "filestream": "^5.0.0"
+  },
+  "engines":{
+    "node":"10.16.0"
+  },
   "author": "anonyHex",
   "license": "ISC",
   "devDependencies": {
