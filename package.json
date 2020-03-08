@@ -4,7 +4,7 @@
   "description": "Creates a text summary for a given text in the input. Uses python's nltk and also uses the concept of cosine distaance of the vectors(sentences in this case)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index"
   },
   "author": "anonyHex",
   "license": "ISC",
