@@ -1,10 +1,16 @@
-<div style="float:right;width: 30rem; height:fit-content;border: 1px solid saddlebrown;" id="summary">
-    <legend><h2>The summarized text</h2></legend>
-    <hr/>
-    <% if (stat=="Successful") { %>
-     <%- textSent %> 
-    <% } else { %>
-    <%-"Let your text be received! Be patient"%>
-    <%}%>
-     
+<div class="row">
+    <div class="col s4 offset-s4">
+        <div class="card green lighten-1">
+            <div class="card-content white-text">
+                <span class="card-title">The Summarized text</span>
+                <p>
+                    <% if(stat=="Successful"){%>
+                    <%-textSent%>
+                    <%} else{%>
+                    <%-"Let your text be received! Be patient!"%>
+                    <%}%>
+        </p>
+    </div>
+</div>
+</div>
 </div>

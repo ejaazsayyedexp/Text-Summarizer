@@ -9,6 +9,7 @@ exports.sub = (req,res)=>{
     var pyprocess = spawn('python', ['./datafolder/newtextsummarizer.py',textrec])
     pyprocess.stdout.on('data',(data)=>{
         result = data.toString()
+        //console.log(result)
         res.render('home',{stat:"Successful",textSent:result,actText:textrec})
     })
     pyprocess.stderr.on('data',(data)=>{
