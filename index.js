@@ -4,10 +4,12 @@ var path = require('path')
 var bodyParser = require('body-parser')
 var urlencodedparser = bodyParser.urlencoded({extended:false})
 
-var {getreq} = require('./getroutes')
-var {sub} = require('./postroutes')
+var {getreq,getabs} = require('./getroutes')
+var {sub, postabs} = require('./postroutes')
 app.set('view engine','ejs')
 app.get('/',getreq);
+app.get('/abstract',getabs)
+app.post('/abstract_summ',urlencodedparser,postabs)
 app.post('/submit',urlencodedparser,sub)
 
 

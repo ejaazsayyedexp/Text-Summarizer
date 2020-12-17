@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text summarizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <br /><br /><br />
+
+
+    <%-include ("partials/actual.ejs") %>
+    <div class="row container">
+        <form class="col s4 offset-s4" action="/abstract_summ" method="POST">
+            <div class="input-field">
+                <textarea id="tarea" class="materialize-textarea" name="textName" title="Text" required></textarea>
+                <label for="tarea">Enter the text to be summarized here</label>
+            </div>
+            <div class="center-align">
+                <div class="waves-effect waves-light btn-large"><input type="submit" value="Generate summary" /></div>
+            </div>
+        </form>
+    </div>
+
+    <%-include ("partials/summarized.ejs") %>
+
+
+    <br />
+
+
+
+
+
+
+</body>
+<script>
+
+</script>
+
+</html>

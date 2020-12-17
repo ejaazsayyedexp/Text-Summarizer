@@ -4,7 +4,8 @@
   "description": "Creates a text summary for a given text in the input. Uses python's nltk and also uses the concept of cosine distaance of the vectors(sentences in this case)",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "heroku-postbuild":"pip install numpy"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
