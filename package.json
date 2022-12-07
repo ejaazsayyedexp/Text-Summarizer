@@ -8,9 +8,9 @@
     "heroku-postbuild":"pip install numpy"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "filestream": "^5.0.0"
   },
   "engines":{
@@ -19,9 +19,9 @@
   "author": "anonyHex",
   "license": "ISC",
   "devDependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "filestream": "^5.0.0",
     "nodemon": "^2.0.2"
   }
